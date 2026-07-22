@@ -2,7 +2,7 @@
   "$schema": "./schema.json",
   "sources": [
     {
-      "name": "Access42 — blog",
+      "name": "Access42 (blog)",
       "url": "https://access42.net/blog/",
       "type": "blog",
       "themes": ["accessibilite"],
@@ -103,7 +103,7 @@
       "type": "blog",
       "themes": ["java"],
       "lang": "FR",
-      "note": "Antoine Rey — blog perso Java/Spring/Spring Boot depuis 14 ans. Actif."
+      "note": "Antoine Rey. Blog perso Java/Spring/Spring Boot depuis 14 ans. Actif."
     },
     {
       "name": "JB Dev Labs (J-B Nahan)",
@@ -154,7 +154,7 @@
       "note": "La coop créatrice d'API Platform. Symfony/PHP, API, JS, sécurité. Très actif."
     },
     {
-      "name": "Operae Partners — Better, faster, together",
+      "name": "Operae Partners : Better, faster, together",
       "url": "https://blog.operaepartners.fr/",
       "type": "blog",
       "themes": ["qualite-architecture"],
@@ -170,7 +170,7 @@
       "note": "Média tech de SFEIR. Rubrique Back riche : Spring Boot, Quarkus, architecture. Actif."
     },
     {
-      "name": "Temesis — blog",
+      "name": "Temesis (blog)",
       "url": "https://www.temesis.com/blog/",
       "type": "blog",
       "themes": ["accessibilite", "eco-conception"],
@@ -195,7 +195,7 @@
       "note": "Chaîne officielle de l'AFUP."
     },
     {
-      "name": "AFUP — Vidéos des conférences",
+      "name": "AFUP (vidéos des conférences)",
       "url": "https://afup.org/talks/",
       "type": "video",
       "themes": ["php", "qualite-architecture", "cybersecurite"],
@@ -224,7 +224,7 @@
       "type": "video",
       "themes": ["eco-conception"],
       "lang": "FR",
-      "note": "Designers Éthiques — retours d'expérience et ateliers. Archives vidéo."
+      "note": "Designers Éthiques : retours d'expérience et ateliers. Archives vidéo."
     },
     {
       "name": "Paris Web",
@@ -265,7 +265,7 @@
       "type": "media",
       "themes": ["php"],
       "lang": "FR",
-      "note": "Association AFLA — la plus grande communauté francophone Laravel. Forum + Discord + agenda."
+      "note": "Association AFLA, la plus grande communauté francophone Laravel. Forum + Discord + agenda."
     },
     {
       "name": "Les e-novateurs",
@@ -297,11 +297,11 @@
       "type": "media",
       "themes": ["cybersecurite"],
       "lang": "FR",
-      "note": "Damien Bancal — fuites, ransomwares, darkweb, OSINT. Newsletter le vendredi."
+      "note": "Damien Bancal : fuites, ransomwares, darkweb, OSINT. Newsletter le vendredi."
     },
 
     {
-      "name": "Access42 — newsletter accessibilité",
+      "name": "Access42 (newsletter accessibilité)",
       "url": "https://access42.net/newsletter-accessibilite-numerique",
       "type": "newsletter",
       "themes": ["accessibilite"],
@@ -314,7 +314,7 @@
       "type": "newsletter",
       "themes": ["developpement", "php", "actu-tech"],
       "lang": "FR",
-      "note": "Hebdo du lundi — actus, articles, offres d'emploi."
+      "note": "Hebdo du lundi : actus, articles, offres d'emploi."
     },
 
     {
@@ -323,7 +323,7 @@
       "type": "podcast",
       "themes": ["qualite-architecture", "developpement"],
       "lang": "FR",
-      "note": "Benoît Gantaume — craft, TDD, legacy, architecture. Rythme irrégulier."
+      "note": "Benoît Gantaume : craft, TDD, legacy, architecture. Rythme irrégulier."
     },
     {
       "name": "Cybersecurity All Day",
@@ -363,7 +363,7 @@
       "type": "podcast",
       "themes": ["cybersecurite"],
       "lang": "FR",
-      "note": "mpgn — cyber offensif, Active Directory, red team, CTF. Actif."
+      "note": "mpgn : cyber offensif, Active Directory, red team, CTF. Actif."
     },
     {
       "name": "If This Then Dev",
@@ -411,7 +411,7 @@
       "type": "podcast",
       "themes": ["cybersecurite"],
       "lang": "FR",
-      "note": "Technique, purple team — chaque série décortique une tactique en 3-4 volets."
+      "note": "Technique, purple team. Chaque série décortique une tactique en 3-4 volets."
     },
     {
       "name": "Radio CSIRT",
@@ -435,7 +435,7 @@
       "type": "podcast",
       "themes": ["eco-conception", "tech-societe"],
       "lang": "FR",
-      "note": "Richard Hanna — le rôle des technologies face aux enjeux écologiques."
+      "note": "Richard Hanna : le rôle des technologies face aux enjeux écologiques."
     },
     {
       "name": "Trench Tech",

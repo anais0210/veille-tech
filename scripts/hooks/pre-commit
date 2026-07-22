@@ -8,7 +8,7 @@ if git diff --cached --quiet -- data/ scripts/build.mjs; then
   exit 0
 fi
 
-echo "📡 data/ a changé — régénération des pages et des compteurs…"
+echo "📡 data/ a changé : régénération des pages et des compteurs…"
 
 if ! node scripts/build.mjs; then
   echo ""

@@ -2,7 +2,7 @@ blank_issues_enabled: true
 contact_links:
   - name: 📖 Comment contribuer
     url: https://github.com/anais0210/veille-tech/blob/main/CONTRIBUTING.md
-    about: Le guide complet — ajouter une source par issue ou par pull request.
+    about: Le guide complet pour ajouter une source, par issue ou par pull request.
   - name: 💬 Discussions
     url: https://github.com/anais0210/veille-tech/discussions
     about: Poser une question, proposer un nouveau thème, échanger sur la veille.

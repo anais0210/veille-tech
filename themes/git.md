@@ -1,4 +1,4 @@
-<!-- Fichier généré par `npm run build` — ne pas éditer à la main. -->
+<!-- Fichier généré par `npm run build` : ne pas éditer à la main. -->
 <!-- Pour ajouter ou modifier une source : data/sources.json -->
 
 # 🌿 Git

@@ -75,7 +75,7 @@ const esc = (s = '') => s.replace(/\|/g, '\\|');
  *
  * `column` vaut 'themes' (pages par type) ou 'type' (pages par thème).
  * `prefix` est le chemin relatif vers le dossier de destination des liens,
- * depuis la page en cours de génération — d'où les `../`.
+ * depuis la page en cours de génération, d'où les `../`.
  */
 function table(list, { column, prefix }) {
   const head =
@@ -88,13 +88,13 @@ function table(list, { column, prefix }) {
       column === 'themes'
         ? s.themes.map((id) => `[${themeById.get(id).label}](${prefix}${id}.md)`).join(', ')
         : `[${typeById.get(s.type).emoji} ${typeById.get(s.type).label}](${prefix}${s.type}.md)`;
-    return `| **[${esc(s.name)}](${s.url})** | ${cell} | ${s.lang} | ${esc(s.note || '—')} |`;
+    return `| **[${esc(s.name)}](${s.url})** | ${cell} | ${s.lang} | ${esc(s.note || '')} |`;
   });
 
   return [head, ...rows].join('\n');
 }
 
-const BANNER = '<!-- Fichier généré par `npm run build` — ne pas éditer à la main. -->\n<!-- Pour ajouter ou modifier une source : data/sources.json -->\n';
+const BANNER = '<!-- Fichier généré par `npm run build` : ne pas éditer à la main. -->\n<!-- Pour ajouter ou modifier une source : data/sources.json -->\n';
 
 const written = [];
 function emit(relPath, content) {
@@ -110,7 +110,7 @@ function emit(relPath, content) {
   })();
   if (current !== next) {
     if (CHECK) {
-      console.error(`❌ Pas à jour : ${relPath} — lance \`npm run build\` puis committe.`);
+      console.error(`❌ Pas à jour : ${relPath}. Lance \`npm run build\` puis committe.`);
       process.exitCode = 1;
     } else {
       writeFileSync(full, next);
@@ -120,7 +120,7 @@ function emit(relPath, content) {
 }
 
 /* ------------------------------------------------------------------ */
-/* Pages par type — sources/<type>.md                                  */
+/* Pages par type : sources/<type>.md                                  */
 /* ------------------------------------------------------------------ */
 
 const usedTypes = types.filter((t) => sources.some((s) => s.type === t.id));
@@ -150,14 +150,14 @@ emit(
 ${usedTypes
   .map((t) => {
     const n = sources.filter((s) => s.type === t.id).length;
-    return `- ${t.emoji} **[${t.plural}](${t.id}.md)** — ${n} source${n > 1 ? 's' : ''}`;
+    return `- ${t.emoji} **[${t.plural}](${t.id}.md)** : ${n} source${n > 1 ? 's' : ''}`;
   })
   .join('\n')}
 `,
 );
 
 /* ------------------------------------------------------------------ */
-/* Pages par thème — themes/<theme>.md                                 */
+/* Pages par thème : themes/<theme>.md                                 */
 /* ------------------------------------------------------------------ */
 
 for (const t of usedThemes) {
@@ -186,7 +186,7 @@ emit(
 ${usedThemes
   .map((t) => {
     const n = sources.filter((s) => s.themes.includes(t.id)).length;
-    return `- ${t.emoji} **[${t.label}](${t.id}.md)** — ${n} source${n > 1 ? 's' : ''} · ${t.description}`;
+    return `- ${t.emoji} **[${t.label}](${t.id}.md)** : ${n} source${n > 1 ? 's' : ''} · ${t.description}`;
   })
   .join('\n')}
 `,
@@ -202,7 +202,7 @@ const START = '<!-- AUTOGEN:START -->';
 const END = '<!-- AUTOGEN:END -->';
 
 const block = `${START}
-<!-- Bloc généré par \`npm run build\` — ne pas éditer à la main. -->
+<!-- Bloc généré par \`npm run build\` : ne pas éditer à la main. -->
 
 **${sources.length} sources** réparties en **${usedTypes.length} types** et **${usedThemes.length} thèmes**.
 
@@ -235,7 +235,7 @@ if (!readme.includes(START) || !readme.includes(END)) {
 const nextReadme = readme.replace(new RegExp(`${START}[\\s\\S]*${END}`), block);
 if (nextReadme !== readme) {
   if (CHECK) {
-    console.error('❌ Pas à jour : README.md — lance `npm run build` puis committe.');
+    console.error('❌ Pas à jour : README.md. Lance `npm run build` puis committe.');
     process.exitCode = 1;
   } else {
     writeFileSync(readmePath, nextReadme);
@@ -252,7 +252,7 @@ for (const dir of ['sources', 'themes']) {
     const rel = `${dir}/${file}`;
     if (written.includes(rel)) continue;
     if (CHECK) {
-      console.error(`❌ Fichier orphelin : ${rel} — lance \`npm run build\`.`);
+      console.error(`❌ Fichier orphelin : ${rel}. Lance \`npm run build\`.`);
       process.exitCode = 1;
     } else {
       unlinkSync(join(ROOT, rel));
