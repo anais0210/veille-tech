@@ -261,7 +261,22 @@ for (const dir of ['sources', 'themes']) {
   }
 }
 
-if (!process.exitCode) {
+if (process.exitCode) {
+  console.error(
+    [
+      '',
+      'Les pages de sources/ et themes/ ainsi que les compteurs du README',
+      'sont générés à partir de data/sources.json. Pour les remettre à jour :',
+      '',
+      '    npm run build && git add -A',
+      '',
+      'Pour ne plus jamais y penser, active le hook Git une fois pour toutes :',
+      '',
+      '    npm run setup-hooks',
+      '',
+    ].join('\n'),
+  );
+} else {
   console.log(
     CHECK
       ? `✅ Tout est à jour (${sources.length} sources).`

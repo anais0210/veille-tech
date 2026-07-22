@@ -1,0 +1,19 @@
+#!/bin/sh
+# Régénère les pages et les compteurs dès que les données changent,
+# et ajoute le résultat au commit en cours. Personne n'a à y penser.
+#
+# Activation : npm run setup-hooks
+
+if git diff --cached --quiet -- data/ scripts/build.mjs; then
+  exit 0
+fi
+
+echo "📡 data/ a changé — régénération des pages et des compteurs…"
+
+if ! node scripts/build.mjs; then
+  echo ""
+  echo "❌ La génération a échoué. Corrige data/sources.json puis recommence."
+  exit 1
+fi
+
+git add README.md sources themes
