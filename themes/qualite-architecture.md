@@ -1,4 +1,4 @@
-<!-- Fichier généré par `npm run build` — ne pas éditer à la main. -->
+<!-- Fichier généré par `npm run build` : ne pas éditer à la main. -->
 <!-- Pour ajouter ou modifier une source : data/sources.json -->
 
 # 🏛️ Qualité & architecture
@@ -9,8 +9,8 @@ Craft, tests, TDD, Clean Architecture, DDD, CQRS, refactoring, dette technique.
 
 | Source | Type | Langue | En un mot |
 | --- | --- | --- | --- |
-| **[AFUP — Vidéos des conférences](https://afup.org/talks/)** | [🎥 Vidéo / conférence](../sources/video.md) | FR | Captations Forum PHP + AFUP Day. |
-| **[Artisan Développeur](https://podcast.ausha.co/artisan-developpeur)** | [🎧 Podcast](../sources/podcast.md) | FR | Benoît Gantaume — craft, TDD, legacy, architecture. Rythme irrégulier. |
+| **[AFUP (vidéos des conférences)](https://afup.org/talks/)** | [🎥 Vidéo / conférence](../sources/video.md) | FR | Captations Forum PHP + AFUP Day. |
+| **[Artisan Développeur](https://podcast.ausha.co/artisan-developpeur)** | [🎧 Podcast](../sources/podcast.md) | FR | Benoît Gantaume : craft, TDD, legacy, architecture. Rythme irrégulier. |
 | **[Blog Eleven Labs](https://blog.eleven-labs.com/fr/)** | [📝 Blog](../sources/blog.md) | FR | Tutos longs (Clean Architecture + Symfony). Rythme lent. |
 | **[Blog Ippon](https://blog.ippon.fr)** | [📝 Blog](../sources/blog.md) | FR | Java, craft, architecture, cloud, data, IA. Actif. |
 | **[Blog JoliCode](https://jolicode.com/blog)** | [📝 Blog](../sources/blog.md) | FR | Articles de fond Symfony, profiling, CI, workflows GitHub. Très actif. |
@@ -25,7 +25,7 @@ Craft, tests, TDD, Clean Architecture, DDD, CQRS, refactoring, dette technique.
 | **[Jérémy Decool (jdecool.fr)](https://www.jdecool.fr/blog.html)** | [📝 Blog](../sources/blog.md) | FR | Très orienté conception : Clean Architecture, DDD. |
 | **[Le code est dans le pré](https://lecodeestdanslepre.fr/)** | [📝 Blog](../sources/blog.md) | FR | Blog perso Symfony/PHP, catégorie dédiée Code quality. Très actif. |
 | **[Les-Tilleuls.coop](https://les-tilleuls.coop/blog)** | [📝 Blog](../sources/blog.md) | FR | La coop créatrice d'API Platform. Symfony/PHP, API, JS, sécurité. Très actif. |
-| **[Operae Partners — Better, faster, together](https://blog.operaepartners.fr/)** | [📝 Blog](../sources/blog.md) | FR | Lean, Kanban, Obeya. Billets critiques de l'agilité industrialisée. |
+| **[Operae Partners : Better, faster, together](https://blog.operaepartners.fr/)** | [📝 Blog](../sources/blog.md) | FR | Lean, Kanban, Obeya. Billets critiques de l'agilité industrialisée. |
 | **[Paris Web](https://www.paris-web.fr/revoir)** | [🎥 Vidéo / conférence](../sources/video.md) | FR | Conférences accessibilité et éco-conception gratuites, doublées en LSF. |
 | **[Planète PHP (AFUP)](https://www.planete-php.fr/)** | [📰 Média / agrégateur](../sources/media.md) | FR | Agrégateur officiel AFUP des blogs PHP francophones. Flux RSS disponible. |
 | **[Wanadev Digital](https://www.wanadevdigital.fr/blog)** | [📝 Blog](../sources/blog.md) | FR | Tutos pointus CQRS avec Symfony Messenger, Event Bus + JS/Vue. Actif. |

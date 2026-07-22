@@ -13,14 +13,14 @@ Chaque source est **lue ou écoutée avant d'être ajoutée**, avec une phrase h
 | une source sur **un sujet précis** | 👉 [Parcourir par thème](themes/) |
 | un **format** particulier (podcast, blog…) | 👉 [Parcourir par type](sources/) |
 | à **ajouter une source** | 👉 [Guide de contribution](CONTRIBUTING.md) · [Ouvrir une issue](../../issues/new?template=ajout-source.yml) |
-| les **règles d'inclusion** | 👉 [Ce qui entre, ce qui n'entre pas](#-p%C3%A9rim%C3%A8tre) |
+| les **règles d'inclusion** | 👉 [Ce qui entre dans la liste](#-p%C3%A9rim%C3%A8tre) |
 
 ---
 
 ## 📚 Le catalogue
 
 <!-- AUTOGEN:START -->
-<!-- Bloc généré par `npm run build` — ne pas éditer à la main. -->
+<!-- Bloc généré par `npm run build` : ne pas éditer à la main. -->
 
 **55 sources** réparties en **5 types** et **12 thèmes**.
 
@@ -61,19 +61,17 @@ Chaque source est **lue ou écoutée avant d'être ajoutée**, avec une phrase h
 
 développement · PHP / Symfony / Laravel · Java · qualité & architecture · cybersécurité · accessibilité · éco-conception numérique · Git · open source · IA · actu tech · tech & société.
 
-**Ce dépôt n'accepte pas** les sources hors du champ technique, même excellentes — écologie généraliste, féminisme, géopolitique, permaculture, santé mentale… Ce n'est pas un jugement de valeur, c'est une question de lisibilité : une liste qui parle de tout ne sert à personne.
-
 Trois critères, cumulatifs :
 
-1. **Vivante** — publication dans les 18 derniers mois, ou contenu explicitement evergreen (référence, cours).
-2. **Accessible** — consultable gratuitement, au moins en partie. Pas de paywall intégral.
-3. **Utile** — apporte quelque chose que les autres sources de la liste n'apportent pas déjà.
+1. **Vivante** : publication dans les 18 derniers mois, ou contenu explicitement evergreen (référence, cours).
+2. **Accessible** : consultable gratuitement, au moins en partie. Pas de paywall intégral.
+3. **Utile** : apporte quelque chose que les autres sources de la liste n'apportent pas déjà.
 
 ---
 
 ## 🗂 Comment c'est rangé
 
-La **source de vérité unique** est [`data/sources.json`](data/sources.json). Toutes les pages Markdown (`sources/`, `themes/`, et le catalogue ci-dessus) en sont **générées** — on ne les édite jamais à la main.
+La **source de vérité unique** est [`data/sources.json`](data/sources.json). Toutes les pages Markdown (`sources/`, `themes/`, et le catalogue ci-dessus) en sont **générées** ; on ne les édite jamais à la main.
 
 ```
 veille-tech/
@@ -97,7 +95,7 @@ npm run build         # régénère sources/, themes/ et le bloc du README
 npm run check         # vérifie que tout est à jour + valide les données (utilisé en CI)
 ```
 
-Le hook Git de la première commande fait le travail pour vous : dès qu'un commit touche `data/`, les pages sont régénérées et ajoutées au commit. Il n'installe rien — c'est un `git config core.hooksPath`.
+Le hook Git de la première commande fait le travail pour vous : dès qu'un commit touche `data/`, les pages sont régénérées et ajoutées au commit. Il n'installe rien : c'est un simple `git config core.hooksPath`.
 
 ---
 
@@ -105,7 +103,7 @@ Le hook Git de la première commande fait le travail pour vous : dès qu'un comm
 
 Les propositions sont les bienvenues, y compris pour **retirer** une source devenue inactive.
 
-- **La façon la plus simple** : [ouvrir une issue](../../issues/new?template=ajout-source.yml) — un formulaire guidé, aucune connaissance de Git requise.
+- **La façon la plus simple** : [ouvrir une issue](../../issues/new?template=ajout-source.yml), un formulaire guidé qui ne demande aucune connaissance de Git.
 - **En pull request** : ajoutez votre entrée dans `data/sources.json`, lancez `npm run build`, committez les fichiers générés.
 
 Tout est détaillé dans [CONTRIBUTING.md](CONTRIBUTING.md). La branche `main` est protégée : chaque changement passe par une PR relue et par la CI.
@@ -116,6 +114,6 @@ Ce projet suit un [code de conduite](CODE_OF_CONDUCT.md). En participant, vous v
 
 ## 📄 Licence
 
-[MIT](LICENSE) — réutilisez, forkez, adaptez librement.
+[MIT](LICENSE) : réutilisez, forkez, adaptez librement.
 
 Les liens pointent vers des contenus appartenant à leurs auteurs et autrices respectives ; seules les données de cette liste (classement, notes) sont couvertes par cette licence.

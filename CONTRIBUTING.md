@@ -2,11 +2,11 @@
 
 Merci d'avoir envie d'enrichir cette liste 🙌
 
-Il y a **deux façons** de proposer une source. Choisissez celle qui vous met le plus à l'aise — les deux mènent au même résultat.
+Il y a **deux façons** de proposer une source. Choisissez celle qui vous met le plus à l'aise : les deux mènent au même résultat.
 
 ---
 
-## Option 1 — Ouvrir une issue (aucun Git requis)
+## Option 1 : ouvrir une issue (aucun Git requis)
 
 [**Ouvrir le formulaire « Ajouter une source »**](../../issues/new?template=ajout-source.yml)
 
@@ -16,7 +16,7 @@ Pour signaler une source morte ou une erreur : [formulaire « Corriger une sourc
 
 ---
 
-## Option 2 — Ouvrir une pull request
+## Option 2 : ouvrir une pull request
 
 ### 1. Vérifiez le périmètre
 
@@ -24,7 +24,7 @@ La source doit relever de la tech : développement, PHP, Java, qualité & archit
 
 Elle doit aussi cocher les trois critères d'inclusion du [README](README.md#-périmètre) : **vivante**, **accessible gratuitement**, **utile** (elle apporte quelque chose que la liste n'a pas déjà).
 
-Cherchez d'abord dans `data/sources.json` que la source n'y est pas déjà — la CI refuse les doublons d'URL et de nom.
+Cherchez d'abord dans `data/sources.json` que la source n'y est pas déjà : la CI refuse les doublons d'URL et de nom.
 
 ### 2. Ajoutez votre entrée dans `data/sources.json`
 
@@ -34,8 +34,8 @@ Cherchez d'abord dans `data/sources.json` que la source n'y est pas déjà — l
 {
   "name": "Blog JoliCode",                    // le nom tel qu'il s'affiche
   "url": "https://jolicode.com/blog",         // lien direct vers le flux, pas vers la home
-  "type": "blog",                             // un seul type — voir data/taxonomy.json
-  "themes": ["php", "git"],                   // un à quatre thèmes — voir data/taxonomy.json
+  "type": "blog",                             // un seul type, voir data/taxonomy.json
+  "themes": ["php", "git"],                   // un à quatre thèmes, voir data/taxonomy.json
   "lang": "FR",                               // FR, EN ou Autre
   "note": "Articles de fond Symfony, profiling, CI. Très actif."
 }
@@ -48,9 +48,9 @@ Quelques règles pour la note :
 - Mentionnez le **rythme** quand c'est utile (« très actif », « sporadique », « evergreen »).
 - Pas de superlatif creux. « Le meilleur blog du monde » n'aide personne ; « DDD/CQRS appliqué à Symfony » si.
 
-Types et thèmes disponibles : voir [`data/taxonomy.json`](data/taxonomy.json). Besoin d'un thème qui n'existe pas ? Ouvrez une issue pour en discuter avant — ajouter un thème pour une seule source dilue le classement.
+Types et thèmes disponibles : voir [`data/taxonomy.json`](data/taxonomy.json). Besoin d'un thème qui n'existe pas ? Ouvrez une issue pour en discuter avant : ajouter un thème pour une seule source dilue le classement.
 
-Les compteurs de sources — par thème, par type, au total — sont calculés automatiquement. Vous n'avez aucun chiffre à mettre à jour nulle part.
+Les compteurs de sources (par thème, par type, au total) sont calculés automatiquement. Vous n'avez aucun chiffre à mettre à jour nulle part.
 
 ### 3. Régénérez et vérifiez
 
@@ -69,7 +69,7 @@ npm run build   # régénère les pages Markdown
 npm run check   # ce que la CI va vérifier
 ```
 
-Dans les deux cas, **les fichiers générés doivent être committés** en même temps que votre modification de `data/sources.json`. La CI échoue sinon — avec le rappel de la commande à lancer.
+Dans les deux cas, **les fichiers générés doivent être committés** en même temps que votre modification de `data/sources.json`. La CI échoue sinon, en rappelant la commande à lancer.
 
 ### 4. Ouvrez la PR
 
@@ -87,7 +87,7 @@ Retirer est aussi utile qu'ajouter. Si un blog n'a rien publié depuis deux ans 
 
 ## Ajouter un type ou un thème
 
-Ces deux taxonomies vivent dans [`data/taxonomy.json`](data/taxonomy.json). Le générateur ne crée une page que pour les types et thèmes réellement utilisés — vous pouvez donc en déclarer un à l'avance sans polluer le dépôt.
+Ces deux taxonomies vivent dans [`data/taxonomy.json`](data/taxonomy.json). Le générateur ne crée une page que pour les types et thèmes réellement utilisés, vous pouvez donc en déclarer un à l'avance sans polluer le dépôt.
 
 Passez par une issue avant : une taxonomie qui grossit trop vite rend la navigation moins bonne, pas meilleure.
 
@@ -95,4 +95,4 @@ Passez par une issue avant : une taxonomie qui grossit trop vite rend la navigat
 
 ## Prérequis technique
 
-Node 18 ou plus. Aucune dépendance à installer — `npm run build` n'utilise que la bibliothèque standard.
+Node 18 ou plus. Aucune dépendance à installer : `npm run build` n'utilise que la bibliothèque standard.
