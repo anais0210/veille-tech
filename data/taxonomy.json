@@ -1,0 +1,86 @@
+{
+  "types": [
+    { "id": "blog", "label": "Blog", "plural": "Blogs", "emoji": "📝" },
+    { "id": "podcast", "label": "Podcast", "plural": "Podcasts", "emoji": "🎧" },
+    { "id": "newsletter", "label": "Newsletter", "plural": "Newsletters", "emoji": "✉️" },
+    { "id": "video", "label": "Vidéo / conférence", "plural": "Vidéos & conférences", "emoji": "🎥" },
+    { "id": "media", "label": "Média / agrégateur", "plural": "Médias & agrégateurs", "emoji": "📰" },
+    { "id": "livre", "label": "Livre", "plural": "Livres", "emoji": "📚" },
+    { "id": "compte", "label": "Compte à suivre", "plural": "Comptes à suivre", "emoji": "👤" },
+    { "id": "outil", "label": "Outil", "plural": "Outils", "emoji": "🛠️" }
+  ],
+  "themes": [
+    {
+      "id": "developpement",
+      "label": "Développement",
+      "emoji": "💻",
+      "description": "Pratique du métier, langages, écosystème web, culture dev."
+    },
+    {
+      "id": "php",
+      "label": "PHP / Symfony / Laravel",
+      "emoji": "🐘",
+      "description": "L'écosystème PHP : le langage, ses frameworks et ses communautés."
+    },
+    {
+      "id": "java",
+      "label": "Java",
+      "emoji": "☕",
+      "description": "Java et la JVM : Spring, Quarkus, Kotlin, outillage."
+    },
+    {
+      "id": "qualite-architecture",
+      "label": "Qualité & architecture",
+      "emoji": "🏛️",
+      "description": "Craft, tests, TDD, Clean Architecture, DDD, CQRS, refactoring, dette technique."
+    },
+    {
+      "id": "cybersecurite",
+      "label": "Cybersécurité",
+      "emoji": "🔐",
+      "description": "Sécurité applicative, défensive et offensive, veille menaces."
+    },
+    {
+      "id": "accessibilite",
+      "label": "Accessibilité",
+      "emoji": "♿",
+      "description": "RGAA, RAWeb, WCAG, European Accessibility Act, conception inclusive."
+    },
+    {
+      "id": "eco-conception",
+      "label": "Éco-conception numérique",
+      "emoji": "🌱",
+      "description": "Sobriété numérique, RGESN, mesure d'impact, numérique responsable."
+    },
+    {
+      "id": "git",
+      "label": "Git",
+      "emoji": "🌿",
+      "description": "Git, workflows de contribution, CI/CD, forges."
+    },
+    {
+      "id": "open-source",
+      "label": "Open source",
+      "emoji": "🔓",
+      "description": "Logiciel libre, communs numériques, gouvernance de projets ouverts."
+    },
+    {
+      "id": "ia",
+      "label": "IA",
+      "emoji": "🤖",
+      "description": "Intelligence artificielle appliquée au développement et ses usages."
+    },
+    {
+      "id": "actu-tech",
+      "label": "Actu tech",
+      "emoji": "📡",
+      "description": "Veille généraliste, actualité hebdomadaire de l'écosystème."
+    },
+    {
+      "id": "tech-societe",
+      "label": "Tech & société",
+      "emoji": "🧭",
+      "description": "Éthique, impacts sociaux et politiques de la technique."
+    }
+  ]
+}

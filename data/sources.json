@@ -1,0 +1,449 @@
+{
+  "$schema": "./schema.json",
+  "sources": [
+    {
+      "name": "Access42 — blog",
+      "url": "https://access42.net/blog/",
+      "type": "blog",
+      "themes": ["accessibilite"],
+      "lang": "FR",
+      "note": "LA référence a11y francophone. Scop, articles écrits par des expert·es en activité. Série « Brèves d'audit »."
+    },
+    {
+      "name": "Blog Eleven Labs",
+      "url": "https://blog.eleven-labs.com/fr/",
+      "type": "blog",
+      "themes": ["php", "qualite-architecture"],
+      "lang": "FR",
+      "note": "Tutos longs (Clean Architecture + Symfony). Rythme lent."
+    },
+    {
+      "name": "Blog Ippon",
+      "url": "https://blog.ippon.fr",
+      "type": "blog",
+      "themes": ["java", "qualite-architecture"],
+      "lang": "FR",
+      "note": "Java, craft, architecture, cloud, data, IA. Actif."
+    },
+    {
+      "name": "Blog JoliCode",
+      "url": "https://jolicode.com/blog",
+      "type": "blog",
+      "themes": ["php", "git", "qualite-architecture"],
+      "lang": "FR",
+      "note": "Articles de fond Symfony, profiling, CI, workflows GitHub. Très actif."
+    },
+    {
+      "name": "Blog Liksi",
+      "url": "https://blog.liksi.io",
+      "type": "blog",
+      "themes": ["java", "qualite-architecture"],
+      "lang": "FR",
+      "note": "JVM (Spring/Kotlin), Angular, architecture back. Actif."
+    },
+    {
+      "name": "Blog Zenika",
+      "url": "https://blog.zenika.com",
+      "type": "blog",
+      "themes": ["java", "developpement", "qualite-architecture"],
+      "lang": "FR",
+      "note": "Java, JS, architecture, crafting. Majoritairement FR. Actif."
+    },
+    {
+      "name": "Boavizta",
+      "url": "https://www.boavizta.org/blog",
+      "type": "blog",
+      "themes": ["eco-conception", "open-source"],
+      "lang": "FR",
+      "note": "Communs open source pour mesurer l'impact du numérique (BoaviztAPI, Datavizta)."
+    },
+    {
+      "name": "Design-patterns.fr",
+      "url": "https://design-patterns.fr",
+      "type": "blog",
+      "themes": ["qualite-architecture", "java", "developpement"],
+      "lang": "FR",
+      "note": "Référence POO + design patterns avec implémentations Java. Contenu evergreen."
+    },
+    {
+      "name": "Dyma (blog)",
+      "url": "https://dyma.fr/blog",
+      "type": "blog",
+      "themes": ["developpement", "php"],
+      "lang": "FR",
+      "note": "Organisme de formation. Tutos JS/TS/PHP/Symfony. Partie récente très orientée actus IA."
+    },
+    {
+      "name": "GreenIT.fr",
+      "url": "https://www.greenit.fr/",
+      "type": "blog",
+      "themes": ["eco-conception"],
+      "lang": "FR",
+      "note": "Collectif Green IT (Frédéric Bordage) depuis 2004. Les 115 bonnes pratiques, RGIT, ACV."
+    },
+    {
+      "name": "Hugues Gobet",
+      "url": "https://huguesgobet.com/fr",
+      "type": "blog",
+      "themes": ["qualite-architecture", "php"],
+      "lang": "FR",
+      "note": "La meilleure ressource FR dédiée DDD/CQRS/hexagonal appliqué à Symfony."
+    },
+    {
+      "name": "IT Efficience",
+      "url": "https://www.itefficience.com/blog",
+      "type": "blog",
+      "themes": ["php", "qualite-architecture"],
+      "lang": "FR",
+      "note": "Agence Symfony/PHP. Architecture, qualité de code, DevOps, sécurité. Actif."
+    },
+    {
+      "name": "Java & Moi",
+      "url": "https://javaetmoi.com",
+      "type": "blog",
+      "themes": ["java"],
+      "lang": "FR",
+      "note": "Antoine Rey — blog perso Java/Spring/Spring Boot depuis 14 ans. Actif."
+    },
+    {
+      "name": "JB Dev Labs (J-B Nahan)",
+      "url": "https://nahan.fr",
+      "type": "blog",
+      "themes": ["php", "qualite-architecture"],
+      "lang": "FR",
+      "note": "Artisan dev PHP/Symfony/Sylius. DDD, CQRS, Event Sourcing. Actif mais sporadique."
+    },
+    {
+      "name": "Je suis un dev",
+      "url": "https://www.jesuisundev.com",
+      "type": "blog",
+      "themes": ["developpement"],
+      "lang": "FR",
+      "note": "Articles JS/PHP + réflexions carrière et culture dev."
+    },
+    {
+      "name": "Jérémy Decool (jdecool.fr)",
+      "url": "https://www.jdecool.fr/blog.html",
+      "type": "blog",
+      "themes": ["qualite-architecture", "php"],
+      "lang": "FR",
+      "note": "Très orienté conception : Clean Architecture, DDD."
+    },
+    {
+      "name": "Le blog du développeur web (Gary Houbre)",
+      "url": "https://blog.gary-houbre.fr",
+      "type": "blog",
+      "themes": ["php"],
+      "lang": "FR",
+      "note": "Tutos composants Symfony, CI, tests."
+    },
+    {
+      "name": "Le code est dans le pré",
+      "url": "https://lecodeestdanslepre.fr/",
+      "type": "blog",
+      "themes": ["php", "qualite-architecture", "cybersecurite"],
+      "lang": "FR",
+      "note": "Blog perso Symfony/PHP, catégorie dédiée Code quality. Très actif."
+    },
+    {
+      "name": "Les-Tilleuls.coop",
+      "url": "https://les-tilleuls.coop/blog",
+      "type": "blog",
+      "themes": ["php", "developpement", "open-source", "qualite-architecture"],
+      "lang": "FR",
+      "note": "La coop créatrice d'API Platform. Symfony/PHP, API, JS, sécurité. Très actif."
+    },
+    {
+      "name": "Operae Partners — Better, faster, together",
+      "url": "https://blog.operaepartners.fr/",
+      "type": "blog",
+      "themes": ["qualite-architecture"],
+      "lang": "FR",
+      "note": "Lean, Kanban, Obeya. Billets critiques de l'agilité industrialisée."
+    },
+    {
+      "name": "sfeir.dev",
+      "url": "https://www.sfeir.dev",
+      "type": "blog",
+      "themes": ["java", "developpement", "ia"],
+      "lang": "FR",
+      "note": "Média tech de SFEIR. Rubrique Back riche : Spring Boot, Quarkus, architecture. Actif."
+    },
+    {
+      "name": "Temesis — blog",
+      "url": "https://www.temesis.com/blog/",
+      "type": "blog",
+      "themes": ["accessibilite", "eco-conception"],
+      "lang": "FR",
+      "note": "Fait le pont a11y + éco-conception (RGAA/RAWeb + RGESN). Très actif."
+    },
+    {
+      "name": "Wanadev Digital",
+      "url": "https://www.wanadevdigital.fr/blog",
+      "type": "blog",
+      "themes": ["php", "qualite-architecture", "developpement"],
+      "lang": "FR",
+      "note": "Tutos pointus CQRS avec Symfony Messenger, Event Bus + JS/Vue. Actif."
+    },
+
+    {
+      "name": "AFUP PHP (YouTube)",
+      "url": "https://www.youtube.com/@afupPHP/videos",
+      "type": "video",
+      "themes": ["php"],
+      "lang": "FR",
+      "note": "Chaîne officielle de l'AFUP."
+    },
+    {
+      "name": "AFUP — Vidéos des conférences",
+      "url": "https://afup.org/talks/",
+      "type": "video",
+      "themes": ["php", "qualite-architecture", "cybersecurite"],
+      "lang": "FR",
+      "note": "Captations Forum PHP + AFUP Day."
+    },
+    {
+      "name": "Devoxx France",
+      "url": "https://www.youtube.com/@DevoxxFRvideos/videos",
+      "type": "video",
+      "themes": ["java", "qualite-architecture", "open-source"],
+      "lang": "FR",
+      "note": "Intégralité des talks en ligne gratuitement après chaque édition (avril)."
+    },
+    {
+      "name": "Grafikart",
+      "url": "https://grafikart.fr/tutoriels",
+      "type": "video",
+      "themes": ["php", "git", "developpement", "cybersecurite"],
+      "lang": "FR",
+      "note": "Parcours structurés : Symfony 7, sécurité applicative, SSH/Git."
+    },
+    {
+      "name": "Journée de l'écoconception numérique",
+      "url": "https://journee-ecoconception-numerique.fr/",
+      "type": "video",
+      "themes": ["eco-conception"],
+      "lang": "FR",
+      "note": "Designers Éthiques — retours d'expérience et ateliers. Archives vidéo."
+    },
+    {
+      "name": "Paris Web",
+      "url": "https://www.paris-web.fr/revoir",
+      "type": "video",
+      "themes": ["accessibilite", "developpement", "qualite-architecture", "eco-conception"],
+      "lang": "FR",
+      "note": "Conférences accessibilité et éco-conception gratuites, doublées en LSF."
+    },
+    {
+      "name": "Pour 1nfo",
+      "url": "https://www.youtube.com/@Pour1nfo",
+      "type": "video",
+      "themes": ["cybersecurite", "tech-societe"],
+      "lang": "FR",
+      "note": "Vulgarisation cyber, membre du Café des Sciences."
+    },
+
+    {
+      "name": "Human Coders News",
+      "url": "https://news.humancoders.com/",
+      "type": "media",
+      "themes": ["developpement", "git", "open-source", "java"],
+      "lang": "FR",
+      "note": "Flux filtrable par tag (java, php, git, open source) + newsletter hebdo."
+    },
+    {
+      "name": "Journal du Hacker",
+      "url": "https://www.journalduhacker.net/",
+      "type": "media",
+      "themes": ["open-source", "developpement", "cybersecurite"],
+      "lang": "FR",
+      "note": "Agrégateur communautaire type Hacker News, orienté logiciel libre."
+    },
+    {
+      "name": "Laravel France",
+      "url": "https://laravel-france.com/",
+      "type": "media",
+      "themes": ["php"],
+      "lang": "FR",
+      "note": "Association AFLA — la plus grande communauté francophone Laravel. Forum + Discord + agenda."
+    },
+    {
+      "name": "Les e-novateurs",
+      "url": "https://les-enovateurs.com/",
+      "type": "media",
+      "themes": ["eco-conception", "tech-societe"],
+      "lang": "FR",
+      "note": "Média associatif sans publicité sur le numérique responsable. Très actif."
+    },
+    {
+      "name": "LinuxFr.org",
+      "url": "https://linuxfr.org/",
+      "type": "media",
+      "themes": ["open-source"],
+      "lang": "FR",
+      "note": "Le site contributif historique du libre francophone."
+    },
+    {
+      "name": "Planète PHP (AFUP)",
+      "url": "https://www.planete-php.fr/",
+      "type": "media",
+      "themes": ["php", "qualite-architecture"],
+      "lang": "FR",
+      "note": "Agrégateur officiel AFUP des blogs PHP francophones. Flux RSS disponible."
+    },
+    {
+      "name": "ZATAZ",
+      "url": "https://www.zataz.com/category/actualites/cyber-actualite/",
+      "type": "media",
+      "themes": ["cybersecurite"],
+      "lang": "FR",
+      "note": "Damien Bancal — fuites, ransomwares, darkweb, OSINT. Newsletter le vendredi."
+    },
+
+    {
+      "name": "Access42 — newsletter accessibilité",
+      "url": "https://access42.net/newsletter-accessibilite-numerique",
+      "type": "newsletter",
+      "themes": ["accessibilite"],
+      "lang": "FR",
+      "note": "Mensuelle. Veille dev, design UX, handicap, open source."
+    },
+    {
+      "name": "Quoi de neuf les devs ?",
+      "url": "https://happytodev.substack.com/",
+      "type": "newsletter",
+      "themes": ["developpement", "php", "actu-tech"],
+      "lang": "FR",
+      "note": "Hebdo du lundi — actus, articles, offres d'emploi."
+    },
+
+    {
+      "name": "Artisan Développeur",
+      "url": "https://podcast.ausha.co/artisan-developpeur",
+      "type": "podcast",
+      "themes": ["qualite-architecture", "developpement"],
+      "lang": "FR",
+      "note": "Benoît Gantaume — craft, TDD, legacy, architecture. Rythme irrégulier."
+    },
+    {
+      "name": "Cybersecurity All Day",
+      "url": "https://open.spotify.com/show/7Mt7FaJCmutbUrdFMogo49",
+      "type": "podcast",
+      "themes": ["cybersecurite"],
+      "lang": "FR",
+      "note": ""
+    },
+    {
+      "name": "Double Slash",
+      "url": "https://double-slash.dev/podcasts/",
+      "type": "podcast",
+      "themes": ["developpement", "qualite-architecture"],
+      "lang": "FR",
+      "note": "Bimensuel, dev web. Dominante JS/TS."
+    },
+    {
+      "name": "Erreur 404",
+      "url": "https://open.spotify.com/show/70kvE409PY0OI65OUFHI8v",
+      "type": "podcast",
+      "themes": ["actu-tech", "tech-societe"],
+      "lang": "FR",
+      "note": ""
+    },
+    {
+      "name": "Explorateur d'Accessibilité",
+      "url": "https://podcasts.apple.com/fr/podcast/explorateur-daccessibilité/id1840222834",
+      "type": "podcast",
+      "themes": ["accessibilite", "ia"],
+      "lang": "FR",
+      "note": "RGAA, European Accessibility Act, FALC."
+    },
+    {
+      "name": "Hack'n Speak",
+      "url": "https://podcasts.apple.com/fr/podcast/hackn-speak/id1548697084",
+      "type": "podcast",
+      "themes": ["cybersecurite"],
+      "lang": "FR",
+      "note": "mpgn — cyber offensif, Active Directory, red team, CTF. Actif."
+    },
+    {
+      "name": "If This Then Dev",
+      "url": "https://ifttd.io/",
+      "type": "podcast",
+      "themes": ["developpement", "tech-societe"],
+      "lang": "FR",
+      "note": ""
+    },
+    {
+      "name": "Le monde de la cyber",
+      "url": "https://open.spotify.com/show/0uNuF41uZYwwik1AW6hOSM",
+      "type": "podcast",
+      "themes": ["cybersecurite"],
+      "lang": "FR",
+      "note": ""
+    },
+    {
+      "name": "Les Cast Codeurs",
+      "url": "https://lescastcodeurs.com/episodes/",
+      "type": "podcast",
+      "themes": ["java", "developpement", "open-source"],
+      "lang": "FR",
+      "note": "Le podcast Java francophone historique."
+    },
+    {
+      "name": "Les Échos de l'IA",
+      "url": "https://open.spotify.com/show/5ZdVWjo3QIdEOpGdcb8HPP",
+      "type": "podcast",
+      "themes": ["ia", "actu-tech"],
+      "lang": "FR",
+      "note": ""
+    },
+    {
+      "name": "NoLimitSecu",
+      "url": "https://www.nolimitsecu.fr/",
+      "type": "podcast",
+      "themes": ["cybersecurite"],
+      "lang": "FR",
+      "note": ""
+    },
+    {
+      "name": "Purple Voice",
+      "url": "https://podcast.fr/podcast/purple-voice/",
+      "type": "podcast",
+      "themes": ["cybersecurite"],
+      "lang": "FR",
+      "note": "Technique, purple team — chaque série décortique une tactique en 3-4 volets."
+    },
+    {
+      "name": "Radio CSIRT",
+      "url": "https://www.radiocsirt.org/",
+      "type": "podcast",
+      "themes": ["cybersecurite"],
+      "lang": "FR",
+      "note": "Format quotidien court, actualité cyber."
+    },
+    {
+      "name": "Tech Café",
+      "url": "https://techcafe.fr/",
+      "type": "podcast",
+      "themes": ["actu-tech", "tech-societe"],
+      "lang": "FR",
+      "note": ""
+    },
+    {
+      "name": "Techologie",
+      "url": "https://techologie.net/",
+      "type": "podcast",
+      "themes": ["eco-conception", "tech-societe"],
+      "lang": "FR",
+      "note": "Richard Hanna — le rôle des technologies face aux enjeux écologiques."
+    },
+    {
+      "name": "Trench Tech",
+      "url": "https://trench-tech.fr/",
+      "type": "podcast",
+      "themes": ["ia", "tech-societe"],
+      "lang": "FR",
+      "note": ""
+    }
+  ]
+}

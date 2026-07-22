@@ -1,0 +1,97 @@
+name: "➕ Ajouter une source"
+description: "Proposer un blog, podcast, newsletter, chaîne ou média à ajouter à la liste."
+title: "[Ajout] "
+labels: ["ajout de source"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci ! Remplissez ce formulaire, quelqu'un se chargera de l'intégrer.
+        Aucune connaissance de Git n'est nécessaire.
+
+  - type: input
+    id: nom
+    attributes:
+      label: Nom de la source
+      placeholder: "Blog JoliCode"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Lien
+      description: "De préférence le lien direct vers le flux d'articles ou d'épisodes, pas la page d'accueil."
+      placeholder: "https://jolicode.com/blog"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Blog
+        - Podcast
+        - Newsletter
+        - Vidéo / conférence
+        - Média / agrégateur
+        - Livre
+        - Compte à suivre
+        - Outil
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: themes
+    attributes:
+      label: Thème(s)
+      description: "Un à quatre thèmes. Au-delà, la source est probablement trop généraliste."
+      options:
+        - label: "💻 Développement"
+        - label: "🐘 PHP / Symfony / Laravel"
+        - label: "☕ Java"
+        - label: "🏛️ Qualité & architecture"
+        - label: "🔐 Cybersécurité"
+        - label: "♿ Accessibilité"
+        - label: "🌱 Éco-conception numérique"
+        - label: "🌿 Git"
+        - label: "🔓 Open source"
+        - label: "🤖 IA"
+        - label: "📡 Actu tech"
+        - label: "🧭 Tech & société"
+
+  - type: dropdown
+    id: langue
+    attributes:
+      label: Langue
+      options:
+        - FR
+        - EN
+        - Autre
+    validations:
+      required: true
+
+  - type: textarea
+    id: note
+    attributes:
+      label: En un mot
+      description: "Une à deux phrases : ce qu'on y trouve concrètement, et son rythme de publication."
+      placeholder: "Articles de fond Symfony, profiling, CI, workflows GitHub. Très actif."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: criteres
+    attributes:
+      label: Critères d'inclusion
+      description: "Voir le README pour le détail."
+      options:
+        - label: "La source relève bien de la tech (dev, sécurité, accessibilité, éco-conception…)"
+          required: true
+        - label: "Elle est vivante : publication dans les 18 derniers mois, ou contenu evergreen"
+          required: true
+        - label: "Elle est consultable gratuitement, au moins en partie"
+          required: true
+        - label: "J'ai vérifié qu'elle n'est pas déjà dans data/sources.json"
+          required: true

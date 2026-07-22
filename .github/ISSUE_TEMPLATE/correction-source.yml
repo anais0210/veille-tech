@@ -1,0 +1,40 @@
+name: "🔧 Corriger ou retirer une source"
+description: "Signaler un lien mort, une source inactive, une erreur de classement ou de description."
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Retirer une source périmée est aussi utile qu'en ajouter une. Merci !
+
+  - type: input
+    id: source
+    attributes:
+      label: Source concernée
+      placeholder: "Blog Eleven Labs"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: probleme
+    attributes:
+      label: Quel est le problème ?
+      options:
+        - Lien mort ou déplacé
+        - Source inactive / arrêtée
+        - Mauvais thème ou mauvais type
+        - Description inexacte
+        - Hors périmètre (pas de la tech)
+        - Doublon
+        - Autre
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Détails
+      description: "Ce qui ne va pas, et si possible ce qu'il faudrait à la place."
+    validations:
+      required: true

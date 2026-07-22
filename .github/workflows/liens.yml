@@ -1,0 +1,39 @@
+name: Vérification des liens
+
+# Une liste de veille meurt de ses liens morts. On les traque chaque semaine.
+on:
+  schedule:
+    - cron: "0 6 * * 1" # tous les lundis à 6h UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  liens:
+    name: Détecter les liens morts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scanner les URLs
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --max-concurrency 4
+            --accept 200,206,301,302,403,429
+            --exclude-path node_modules
+            data/sources.json
+            README.md
+          fail: false
+
+      - name: Ouvrir ou mettre à jour une issue si des liens sont cassés
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "🔗 Liens morts détectés"
+          content-filepath: ./lychee/out.md
+          labels: correction, automatique

@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Sources de veille tech",
+  "description": "Décrit data/sources.json. Référencé par le champ $schema du fichier : votre éditeur vous proposera l'autocomplétion des types et des thèmes.",
+  "type": "object",
+  "required": ["sources"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "url", "type", "themes", "lang"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 2,
+            "description": "Nom affiché de la source."
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https?://",
+            "description": "Lien direct vers le flux d'articles ou d'épisodes."
+          },
+          "type": {
+            "enum": ["blog", "podcast", "newsletter", "video", "media", "livre", "compte", "outil"],
+            "description": "Un seul type par source."
+          },
+          "themes": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 4,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "developpement",
+                "php",
+                "java",
+                "qualite-architecture",
+                "cybersecurite",
+                "accessibilite",
+                "eco-conception",
+                "git",
+                "open-source",
+                "ia",
+                "actu-tech",
+                "tech-societe"
+              ]
+            },
+            "description": "Un à quatre thèmes. Au-delà, la source est trop généraliste pour être utile."
+          },
+          "lang": {
+            "enum": ["FR", "EN", "Autre"]
+          },
+          "note": {
+            "type": "string",
+            "maxLength": 220,
+            "description": "Une à deux phrases : ce qu'on y trouve concrètement, et le rythme de publication."
+          }
+        }
+      }
+    }
+  }
+}
