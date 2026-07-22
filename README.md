@@ -87,12 +87,17 @@ veille-tech/
 
 Ce choix évite le piège classique des listes curées : une même source recopiée dans trois fichiers, dont deux finissent périmés.
 
+**Les compteurs ne sont jamais saisis à la main.** Le nombre de sources par thème, par type et au total est recalculé à partir des données à chaque génération. Ajoutez une source avec `"themes": ["java"]` et le compteur Java s'incrémente tout seul.
+
 ### Régénérer les pages
 
 ```bash
-npm run build     # régénère sources/, themes/ et le bloc du README
-npm run check     # vérifie que tout est à jour + valide les données (utilisé en CI)
+npm run setup-hooks   # une seule fois : régénère automatiquement à chaque commit
+npm run build         # régénère sources/, themes/ et le bloc du README
+npm run check         # vérifie que tout est à jour + valide les données (utilisé en CI)
 ```
+
+Le hook Git de la première commande fait le travail pour vous : dès qu'un commit touche `data/`, les pages sont régénérées et ajoutées au commit. Il n'installe rien — c'est un `git config core.hooksPath`.
 
 ---
 

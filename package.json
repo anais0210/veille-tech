@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node scripts/build.mjs --check"
+    "check": "node scripts/build.mjs --check",
+    "setup-hooks": "git config core.hooksPath scripts/hooks && echo '✅ Hook activé : les pages seront régénérées à chaque commit.'"
   }
 }

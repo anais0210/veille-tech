@@ -50,14 +50,26 @@ Quelques règles pour la note :
 
 Types et thèmes disponibles : voir [`data/taxonomy.json`](data/taxonomy.json). Besoin d'un thème qui n'existe pas ? Ouvrez une issue pour en discuter avant — ajouter un thème pour une seule source dilue le classement.
 
+Les compteurs de sources — par thème, par type, au total — sont calculés automatiquement. Vous n'avez aucun chiffre à mettre à jour nulle part.
+
 ### 3. Régénérez et vérifiez
+
+Le plus simple, à faire une seule fois après avoir cloné :
+
+```bash
+npm run setup-hooks
+```
+
+Un hook Git régénère alors les pages et les ajoute à votre commit dès que vous touchez `data/`. Vous n'avez plus rien à lancer.
+
+Sinon, manuellement :
 
 ```bash
 npm run build   # régénère les pages Markdown
 npm run check   # ce que la CI va vérifier
 ```
 
-Committez **les fichiers générés en même temps** que votre modification de `data/sources.json`. La CI échoue si le dépôt n'est pas à jour.
+Dans les deux cas, **les fichiers générés doivent être committés** en même temps que votre modification de `data/sources.json`. La CI échoue sinon — avec le rappel de la commande à lancer.
 
 ### 4. Ouvrez la PR
 
