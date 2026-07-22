@@ -1,10 +1,8 @@
 # 📡 Veille tech francophone
 
-Une liste curée de **sources de veille tech en français** : blogs, podcasts, newsletters, chaînes vidéo et médias qui parlent de développement, PHP, Java, qualité de code, cybersécurité, accessibilité et éco-conception numérique.
+Une liste de **sources de veille tech en français** : blogs, podcasts, newsletters, chaînes vidéo et médias qui parlent de développement, PHP, Java, qualité de code, cybersécurité, accessibilité et éco-conception numérique etc ...
 
-Chaque source est **lue ou écoutée avant d'être ajoutée**, avec une phrase honnête sur ce qu'on y trouve — et sur son rythme de publication. Pas de liste morte de 400 liens : ici, tout est vivant.
-
-> 🇫🇷 Le francophone manque cruellement de listes de veille maintenues. C'est la raison d'être de ce dépôt.
+Chaque source est **lue ou écoutée avant d'être ajoutée**, avec une phrase honnête sur ce qu'on y trouve et sur son rythme de publication. Pas de liste morte de 400 liens : ici, tout est vivant.
 
 ---
 
